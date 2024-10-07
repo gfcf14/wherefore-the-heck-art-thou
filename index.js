@@ -807,7 +807,7 @@ function TimeSkip3() {
 }
 
 //Executes upon finishing the page load - Works like a constructor of sorts
-export function getStarted() {
+function getStarted() {
   $('body').css({opacity: 1});
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) onMobile = true;
 
