@@ -645,7 +645,8 @@ $(() => {
 
 /*KEY PRESS*/
 document.onkeypress = function (e) {
-  if (window.location.href.includes("/games/whereforetheheckartthou/whereforetheheckartthou")) {
+  if (inMain) {
+  // if (window.location.href.includes("/games/whereforetheheckartthou/whereforetheheckartthou")) {
     if (e.keyCode >= 97 && e.keyCode <= 122) { //to detect letters from a to z
       password += String.fromCharCode(e.keyCode);
     }
@@ -7768,7 +7769,7 @@ function preloadGreenDream() {
 
 	//Always show the logo to try to ensure ownership!
 	var greendream = document.createElement("img");
-	greendream.src = "http://greendreampg.epizy.com/images/dream.png";
+	greendream.src = "./dream.png";
 	greendream.id = "greendream";
 	greendream.setAttribute("style", "position: absolute; top:" + ((canvasHeight / 2) - 120) + "px; left: " + (canvasLeft + (canvasWidth / 2) - 188) + "px;");
 
